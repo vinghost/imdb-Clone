@@ -1,0 +1,23 @@
+
+<div class="login-container">
+    <img class="film" src="\assets\film2.png" alt="">
+    <div class="logo">Movie Database</div>
+    <div class="desc">
+    Movie the ultimate entertainment world which let you excape the reality for while and teach you to alter your own perspective!
+    express your experince and read others experince of your favroute movie!!    
+    </div>
+</div>
+<div class="login-form">
+    <div class="form-group">
+        <label for="Uname">username</label>
+        <input type="text" name="Uname" class="form-control"[(ngModel)]="username"/>
+    </div>
+    <div class="form-group">
+        <label for="pass">password</label>
+        <input type="password" name="pass" class="form-control"[(ngModel)]="password"/>    
+    </div>
+    <div class="btn-container">
+        <div class="error">{{errormsg}}</div>
+        <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+</div>
